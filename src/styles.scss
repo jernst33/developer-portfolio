@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$primary-palette: mat-palette($mat-light-blue);
+$accent-palette: mat-palette($mat-light-green, A200, A100, A400);
+
+$warn-palette: mat-palette($mat-red);
+
+$developer-portfolio-theme: mat-dark-theme($primary-palette, $accent-palette, $warn-palette);
+
+@include angular-material-theme($developer-portfolio-theme);
+
+$primary: mat-color($primary-palette);
+$accent: mat-color($accent-palette);
+$warn: mat-color($warn-palette);
+
+html, body { height: 100%;}
+body { margin: 0; font-family: 'IBM Plex Mono', monospace; }
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+  font-family: 'IBM Plex Mono', monospace!important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: #ffffff;
+  opacity: 60%;
+}
+
+h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold, p.bold, span.bold {
+  color: #ffffff;
+  opacity: 87%;
+}
+
+.mat-icon {
+  font-family: 'Material Icons'!important;
+}
