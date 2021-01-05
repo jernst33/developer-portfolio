@@ -10,7 +10,7 @@
     ]
   },
   "hosting": {
-    "public": "dist/browser",
+    "public": "dist/developer-portfolio/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
