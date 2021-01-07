@@ -1,0 +1,42 @@
+@import "../../../../styles";
+
+.root {
+  //padding-top: 3em;
+}
+
+.hero-content {
+  padding: 3em;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-image {
+  border: 1.5pt dashed $primary;
+}
+
+.external {
+  position: relative;
+  background-image: url("https://lh3.googleusercontent.com/proxy/JpEac70XSiJHQ65YibZmW1LJDXrfaI0LUixWwJZVYQL80-0gw2l1i1bFC12ih4MdB8DdOjIV97xBRW4x99hEyWohbtIg8yhS4ACtM4dbkQHF_prbfqsff_CUTTqudZwZvGI42yVn4_HqPAYBo3g")!important;
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 70vh;
+  border: 1.5pt dashed $accent;
+  box-sizing: border-box;
+}
+.inside-content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+
+.hero-content {
+  width: 85%;
+}

@@ -1,0 +1,11 @@
+@import "../../../../styles";
+
+mat-toolbar {
+  //border: 1pt solid $primary;
+}
+
+.title {
+  color: $primary;
+  text-decoration: none;
+  font-style: italic;
+}

@@ -5,8 +5,39 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$primary-palette: mat-palette($mat-light-blue);
-$accent-palette: mat-palette($mat-light-green, A200, A100, A400);
+$primary-palette: mat-palette($mat-yellow);
+//$accent-palette: mat-palette($mat-light-green, A200, A100, A400);
+$accent-palette: mat-palette((
+  50 : #eff7fb,
+  100 : #d7ecf6,
+  200 : #bce0f0,
+  300 : #a1d3e9,
+  400 : #8cc9e5,
+  500 : #78c0e0,
+  600 : #70badc,
+  700 : #65b2d8,
+  800 : #5baad3,
+  900 : #489ccb,
+  A100 : #ffffff,
+  A200 : #f0f9ff,
+  A400 : #bde6ff,
+  A700 : #a3ddff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000
+  )), A700, A800, A900);
 
 $warn-palette: mat-palette($mat-red);
 
@@ -38,4 +69,13 @@ h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold, p.bold, span.bold {
 
 .mat-icon {
   font-family: 'Material Icons'!important;
+}
+
+.mat-transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-item {
+  color: $primary;
+  text-decoration: none;
 }

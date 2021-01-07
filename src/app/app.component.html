@@ -1,6 +1,10 @@
-<h1 class="bold">This is the app</h1>
-<p>Would you look at that? Nice</p>
-<div fxLayout="row" fxLayoutGap="15px">
-
-</div>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="push"><app-sidenav></app-sidenav></mat-sidenav>
+  <mat-sidenav-content>
+    <div class="stars"></div>
+    <div class="twinkling">
+      <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,20 +1,39 @@
 @import "../styles";
+@import "../credited-styles";
 
-h1 {
-  display: inline-block;
-  position: relative;
-}
-h1:before {
-  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
-  font-size: 0.8em;
-  font-weight: 700;
-  color: $primary;
-  width: 100%;
-  position: absolute;
-  top: 18px;
-  left: -1px;
-  overflow: hidden;
-}
+//h1 {
+//  display: inline-block;
+//  position: relative;
+//}
+//h1:before {
+//  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+//  font-size: 0.8em;
+//  font-weight: 700;
+//  color: $primary;
+//  width: 100%;
+//  position: absolute;
+//  top: 18px;
+//  left: -1px;
+//  overflow: hidden;
+//}
 p {
   //color: $accent;
+}
+
+mat-card {
+  width: 600px;
+  border: 2pt solid #ffa100;
+}
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+mat-sidenav-content {
+  width: 100%;
+  height: 100%;
 }

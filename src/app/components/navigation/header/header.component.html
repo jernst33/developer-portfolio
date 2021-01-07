@@ -1,0 +1,16 @@
+<mat-toolbar color="transparent" fxLayout="row">
+  <div fxHide.gt-sm fxLayout="row" fxLayoutAlign="start center">
+    <a class="nav-item" (click)="onToggle()"><mat-icon inline>menu</mat-icon></a>
+  </div>
+  <div fxHide.gt-sm fxFlex></div>
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <a class="title" [routerLink]="'home'">Jacob Ernst</a>
+  </div>
+  <div fxHide.lt-md fxFlex></div>
+  <div fxHide.lt-md fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="2em">
+    <a class="nav-item" [routerLink]="'home'">Home</a>
+    <a class="nav-item" [routerLink]="'about'">About</a>
+    <a class="nav-item" [routerLink]="'experience'">Experience</a>
+    <a class="nav-item" [routerLink]="'contact'">Contact</a>
+  </div>
+</mat-toolbar>
